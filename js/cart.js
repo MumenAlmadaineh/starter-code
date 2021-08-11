@@ -6,6 +6,21 @@ const table = document.getElementById('cart');
 table.addEventListener('click', removeItemFromCart);
 let cart;
 
+// function loadCart() {
+//   if (localStorage.cartItems){
+//       let cartItems = JSON.parse(localStorage.cartItems);
+//       // cart = new Cart(cartItems);
+//       console.log(cartItems[0].name);
+
+//       // const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+//       // cart = new Cart(cartItems);
+
+//   }
+
+//   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+//   cart = new Cart(cartItems);
+// }
+
 function loadCart() {
   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
   cart = new Cart(cartItems);
