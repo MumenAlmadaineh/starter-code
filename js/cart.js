@@ -19,7 +19,7 @@ let cart;
 
 //   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 //   cart = new Cart(cartItems);
-// }
+
 
 function loadCart() {
   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
